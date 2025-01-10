@@ -1,0 +1,41 @@
+[
+    {
+        "id": 1,
+        "name": "hudi",
+        "description": "tbili hudi.",
+        "price": 40,
+        "image": "hudi.jpg",
+        "category": "tansacmeli",
+        "stock": 150,
+        "sizes": ["S", "M", "L", "XL"],
+        "colors": ["tetri", "shavi", "lurji"],
+        "rating": 4.6,
+        "brand": "brendi"
+    },
+    {
+        "id": 2,
+        "name": "sportuli sharvali",
+        "description": "komfortuli sportuli sharvali.",
+        "price": 50,
+        "image": "sharvali.webp",
+        "category": "tansacmeli",
+        "stock": 80,
+        "sizes": ["M", "L", "XL", "XXL"],
+        "colors": ["shavi", "muqi lurji"],
+        "rating": 4.2,
+         "brand": "brendi"
+    },
+    {
+        "id": 3,
+        "name": "sportuli botasi",
+        "description": "komfortuli rbili botasi.",
+        "price": 70,
+        "image": "botasi.webp",
+        "category": "fexsacmeli",
+        "stock": 120,
+        "sizes": ["One Size"],
+        "colors": ["shavi", "yavisferi"],
+        "rating": 4.8,
+         "brand": "brendi"
+    }
+]

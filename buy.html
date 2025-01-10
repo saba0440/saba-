@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="buy-page">
+        <h2>პროდუქტის ყიდვა</h2>
+        <article class="product-info">
+            <img src="{{ url_for('static', filename=product.image) }}" alt="{{ product.name }}" class="product-image">
+            <h3>{{ product.name }}</h3>
+            <p>ფასი: ${{ product.price }}</p>
+        </article>
+        <div id="checkoutFormContainer">
+          <form id="checkoutForm">
+              <label for="firstName">სახელი:</label><br>
+               <input type="text" id="firstName" name="firstName" required><br>
+               <label for="lastName">გვარი:</label><br>
+               <input type="text" id="lastName" name="lastName" required><br>
+
+                <label for="cardNumber">ბარათის ნომერი:</label><br>
+               <input type="text" id="cardNumber" name="cardNumber" required><br>
+
+                <label for="email">ელფოსტა:</label><br>
+                 <input type="email" id="email" name="email" required><br>
+                <button type="submit">გადახდა</button>
+           </form>
+        </div>
+    </div>
+{% endblock %}

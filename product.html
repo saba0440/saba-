@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<article class="product-detail">
+    <a href="/" class="back-button">უკან დაბრუნება</a>
+    <img src="{{ url_for('static', filename=product.image) }}" alt="{{ product.name }}" class="product-image">
+    <h2>{{ product.name }}</h2>
+    <p>{{ product.description }}</p>
+    <p>ფასი: ${{ product.price }}</p>
+    <button class="buy-btn" data-product-id="{{ product.id }}">ყიდვა</button>
+   <p id="message" class="message"></p>
+</article>
+{% endblock %}

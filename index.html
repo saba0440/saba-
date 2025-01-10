@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="products">
+        {% for product in products %}
+            <article class="product">
+                <img src="{{ url_for('static', filename=product.image) }}" alt="{{ product.name }}" class="product-image">
+                <h3>{{ product.name }}</h3>
+                <p>{{ product.description }}</p>
+                <p>ფასი: ${{ product.price }}</p>
+                <a href="{{ url_for('product', product_id=product.id) }}">დათვალიერება</a>
+                <button class="buy-btn" data-product-id="{{ product.id }}">ყიდვა</button>
+            </article>
+        {% endfor %}
+    </div>
+{% endblock %}
